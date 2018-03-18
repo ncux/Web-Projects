@@ -1,0 +1,155 @@
+/* media queries */
+@media (min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    .content-wrap, #section-b ul {
+        grid-column: 2/4;
+    }
+}
+
+
+body {
+    margin: 0;
+    font-family: Ariel, Helvetica, sans-serif;
+    background-color: darkgrey;
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    border-radius: 2rem;
+    margin: 0.5em 0;
+}
+
+.btn:hover {
+    background-color: wheat;
+    color: black;
+}
+
+#showcase {
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+}
+
+#showcase .bg-image {
+    position: absolute;
+    background-image: url("images/Used-cars-04.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+#showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+#showcase .content-wrap {
+    padding: 0 1.5em;
+}
+
+#section-a {
+    background-color: #eaeaea;
+    color: black;
+    padding-bottom: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.content-text {
+    columns: 2;
+    column-gap: 2em;
+}
+
+p .content-text {
+    padding-top: 0;
+}
+
+
+#section-b {
+    padding: 2em 1em 1em;
+}
+
+#section-b ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-b ul li {
+    margin-bottom: 1em;
+    background-color: #eaeaea;
+    color: black;
+    width: 33%;
+}
+
+.card-content {
+    padding: 1.5em;
+}
+
+#section-c {
+    background-color: #eaeaea;
+    color: black;
+    padding: 2em;
+}
+
+#section-d .box {
+    padding: 2em;
+    color: black;
+}
+
+#section-d .box:first-child {
+    background-color: lightblue;
+}
+
+#main-footer {
+    padding: 2em;
+    background-color: black;
+    color: #eaeaea;
+    text-align: center;
+}
+
+#main-footer a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.box, #main-footer div {
+    grid-column: span 2;
+}
+
