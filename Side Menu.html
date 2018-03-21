@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Side Menu</title>
+    <link href="Side%20Menu.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav-bar">
+    <span class="open-slide">
+        <a id="open-menu" href="#">
+            <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+
+        </a>
+    </span>
+
+    <ul class="nav-bar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div id="side-menu" class="side-nav">
+    <a id="close-menu" href="#" class="btn-close">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+
+<div id="main">
+
+    <h2>Side Menu</h2>
+</div>
+
+<script>   
+    
+    document.querySelector('#open-menu').addEventListener('click', openMenu);
+    document.querySelector('#close-menu').addEventListener('click', closeMenu);
+    
+    function openMenu() {
+        document.querySelector('#side-menu').style.width = "250px";
+        document.querySelector('#main').style.marginLeft = "250px";
+    }
+    
+    function closeMenu() {
+        document.querySelector('#side-menu').style.width = "0px";
+        document.querySelector('#main').style.marginLeft = "0px";
+    }
+   
+</script>
+
+</body>
+</html>
